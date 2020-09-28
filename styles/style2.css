@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 200px 200px 200px;
+    grid-template-areas: 
+    "logo . menu"
+    "main main main"
+    "copyright copyright links";
+}
+
+.logo-container {
+    grid-area: logo;
+}
+
+.menu-container {
+    grid-area: menu;
+}
+
+.main-image-container {
+    grid-area: main;
+}
+
+.copyright-container {
+    grid-area: copyright;
+}
+
+.footer-menu-container {
+    grid-area: links;
+    text-align: right;
+}
